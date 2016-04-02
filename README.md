@@ -23,7 +23,7 @@ HANDLE WINAPI SafeCreateThread(
 	LPDWORD lpThreadId)
 {
 	
-	return TITAN_SafeCreateRemoteThread(GetCurrentProcess(), lpThreadAttributes, dwStackSize, lpStartAddress, lpParameter, dwCreationFlags, lpThreadId);
+	return SafeCreateRemoteThread(GetCurrentProcess(), lpThreadAttributes, dwStackSize, lpStartAddress, lpParameter, dwCreationFlags, lpThreadId);
 }
 
 HANDLE WINAPI SafeCreateRemoteThread(
